@@ -13,11 +13,11 @@ database_models.Base.metadata.create_all(bind=engine)
 app = FastAPI()
 
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origin=['http://localhost:3000'],
-    allow_methods=['*']
-)
+# app.add_middleware(
+#     CORSMiddleware,
+#     allow_origin=['http://localhost:3000'],
+#     allow_methods=['*']
+# )
 
 products = [
     Product(id=1, name='Phone', description='Budget phone',
